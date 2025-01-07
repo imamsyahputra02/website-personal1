@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <style>
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: auto;
+            padding: auto;
+            background-image: url('image2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        
+        .container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        .image img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .image img:hover {
+            transform: scale(1.1);
+        }
+
+        
+        h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: #000000;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        
+        .biodata ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .biodata li {
+            background: #f0f8ff00;
+            padding: 10px 15px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .biodata li:hover {
+            background-color: #cccccc;
+            transform: translateX(10px);
+        }
+
+        .biodata span {
+            font-weight: italic;
+            color: #000000;
+        }
+
+        .biodata i {
+            font-style: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="image">
+            <img src="image.jpeg" alt="Foto Profil">
+        </div>
+
+        
+        <h2>Biodata Diri</h2>
+
+        
+        <div class="biodata">
+            <ul>
+                <li><span>Nama:</span> <i>Muhammad Imam Syahputra</i></li>
+                <li><span>Tanggal Lahir:</span> <i>7 Juni 2002</i></li>
+                <li><span>Jenis Kelamin:</span> <i>Laki-laki</i></li>
+                <li><span>Alamat:</span> <i>Jl. Mawar XI Prum Helvetia</i></li>
+                <li><span>Email:</span> <i>imamsyahputra070602@gmail.com</i></li>
+                <li><span>Nomor Telepon:</span> <i>+62 822 7310 8208</i></li>
+                <li><span>Hobi:</span> <i>Olahraga</i></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
